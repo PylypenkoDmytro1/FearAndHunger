@@ -5,12 +5,11 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: auto;
-    width: 1fr;
 }
 
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 300px auto 450px;
     grid-template-rows: 150px auto auto auto auto;
     gap: 30px;
 }
@@ -61,6 +60,7 @@ body {
 
 .image-border {
     background-color: rgba(20, 20, 20, 0.9);
+    width: 400px;
     padding: 10px;
     border: 1px solid grey;
 }
@@ -90,7 +90,7 @@ body {
 
 .image-list li {
     display: inline-block;
-    margin: 10px;
+    margin: 30px;
     text-align: center;
 }
 
@@ -103,6 +103,10 @@ body {
 .item2 a {
     color: rgb(175, 137, 101);
     text-decoration: none;
+}
+
+.item6 h3 {
+    margin: 30px;
 }
 
 .itemX {
@@ -158,17 +162,17 @@ body {
     }
 
     .item4 {
-        grid-column: 3 / auto;
+        grid-column: 3 / 4;
         grid-row: 2 / 3;
     }
 
     .item5 {
-        grid-column: 3 / auto;
+        grid-column: 3 / 4;
         grid-row: 3 / 4;
     }
 
     .item6 {
         grid-column: 2 / 4;
-        grid-row: 4 / 100px;
+        grid-row: 4 / 5;
     }
 }
